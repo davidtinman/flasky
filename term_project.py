@@ -24,6 +24,7 @@ db = SQLAlchemy(app)
 
 
 class Food(db.Model):
+    """The main food groups recognized by the USDA"""
     __tablename__ = 'foods'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(64), unique=True)
@@ -33,7 +34,7 @@ class Food(db.Model):
         return '<Food %r>' % self.name
 
 class Macronutrient(db.Model):
-    """docstring for Macronutrient.db.Model"""
+    """Macronutrients inclued protein, carbohydrates, and fat."""
     __tablename__ = 'macronutrients'
     id = db.Column(db.Integer, primary_key=True)
     major_macronutrient = db.Column(db.String(64), unique=True, index=True)
