@@ -37,7 +37,7 @@ class Macronutrient(db.Model):
     __tablename__ = 'macronutrients'
     id = db.Column(db.Integer, primary_key=True)
     major_macronutrient = db.Column(db.String(64), unique=True, index=True)
-    food_id = db.Column(db.Integer, db.ForeignKey('foods_id'))
+    food_id = db.Column(db.Integer, db.ForeignKey('foods.id'))
 
     def __repr__(self):
         return '<Macronutrient %r' %self.major_macronutrient
