@@ -72,9 +72,9 @@ Werkzeug is a comprehensive WSGI web application library. It began as a simple c
 Data Importing and Access
 ======
 
--Collection through web UI
--Database is updated when new User and food data is entered through the web form.
--A simple count of food data in the database can be accessed through the web UI as well
+* Collection through web UI
+* Database is updated when new User and food data is entered through the web form.
+* A simple count of food data in the database can be accessed through the web UI as well
 
 Author
 ======
